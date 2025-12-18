@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+Booksy – Frontend Full Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Booksy es una plataforma web desarrollada como parte de un proyecto académico, orientada a la gestión y comercialización de libros digitales. El frontend de la aplicación fue desarrollado utilizando React, con el objetivo de ofrecer una interfaz moderna, intuitiva y responsiva, integrada a un backend mediante una API REST.
 
-## Available Scripts
+Tecnologías utilizadas
 
-In the project directory, you can run:
+React (Create React App)
 
-### `npm start`
+JavaScript (ES6+)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+HTML5
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+CSS3
 
-### `npm test`
+Node.js y npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Consumo de API REST
 
-### `npm run build`
+GitHub para control de versiones
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Requisitos previos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Node.js
 
-### `npm run eject`
+npm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Puedes verificar la instalación ejecutando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+node -v
+npm -v
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instalación y ejecución
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+En el directorio del proyecto, ejecuta los siguientes comandos:
 
-## Learn More
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instala todas las dependencias necesarias del proyecto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
+Ejecuta la aplicación en modo desarrollo.
+Abre http://localhost:3000
+ para visualizarla en el navegador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La aplicación se recargará automáticamente cuando se realicen cambios en el código.
+Los errores de lint se mostrarán en la consola.
 
-### Analyzing the Bundle Size
+##Scripts disponibles
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Inicia el ejecutor de pruebas en modo interactivo de observación.
+Consulta la documentación sobre ejecución de pruebas
+ para más información.
 
-### Making a Progressive Web App
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Construye la aplicación para producción en la carpeta build.
+Optimiza el rendimiento y genera archivos minimizados listos para despliegue.
 
-### Advanced Configuration
+npm run eject
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Nota: esta es una operación irreversible.
 
-### Deployment
+Este comando expone la configuración completa de Create React App (webpack, Babel, ESLint, etc.) para permitir una personalización avanzada del proyecto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Estructura del proyecto
 
-### `npm run build` fails to minify
+El proyecto se organiza de la siguiente manera:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+ ├── api/               # Llamadas a la API REST
+ ├── components/        # Componentes reutilizables
+ ├── context/           # Contextos globales (Auth, Carrito)
+ ├── pages/              # Vistas principales del sistema
+ ├── App.js
+ └── index.js
+
+Funcionalidades principales
+
+Autenticación de usuarios (login y rutas protegidas)
+
+Visualización de catálogo de libros
+
+Operaciones CRUD conectadas al backend
+
+Carrito de compras
+
+Descarga de libros adquiridos
+
+Validaciones de formularios en el frontend
+
+Integración con el backend
+
+El frontend se comunica con el backend de Booksy a través de una API REST, enviando y recibiendo datos mediante solicitudes HTTP para la gestión de usuarios, libros y pedidos.
+
+##Aprende más
+
+Este proyecto fue inicializado con Create React App
+.
+
+Puedes consultar la documentación oficial de React en:
+https://reactjs.org/
+
+Documentación de Create React App:
+https://facebook.github.io/create-react-app/docs/getting-started
+
+Autores
+
+Proyecto desarrollado con fines académicos por el equipo Booksy.
+Desarrolaldores: Gonzalo Palma, Rodrigo Salaza
