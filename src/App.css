@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #e74c3c;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* <--- ESTE ES EL FONDO PRO */
+}
+
+
+body {
+    
+    background: var(--bg-gradient); 
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif; 
+    color: #2c3e50;
+}
+
+
+.navbar-custom {
+    background: rgba(255, 255, 255, 0.95) !important; 
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+
+.btn-cart-custom {
+    background-color: #f1f2f6;
+    color: var(--primary) !important;
+    border-radius: 50px !important; 
+    padding: 8px 20px !important;
+    transition: all 0.2s ease;
+}
+
+.btn-cart-custom:hover {
+    background-color: var(--primary);
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.2);
+}
+
+
+.dropdown-toggle-custom::after {
+    display: none; 
+}
+
+
+.hero-section {
+    
+    background: linear-gradient(to right, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 0;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 0 0 30px 30px; 
+}
+
+
+.book-card {
+    border: none !important;
+    border-radius: 15px !important;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* PORTADAS GENERADAS (Placeholder) */
+.book-cover-placeholder {
+    height: 250px;
+    background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+
+.book-spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: inset -2px 0 5px rgba(0,0,0,0.1);
+}
