@@ -2,7 +2,7 @@ import { Navbar, Nav, Container, Badge, Dropdown, Button } from 'react-bootstrap
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
-// IMPORTAMOS LOS ICONOS PROFESIONALES AQUÍ:
+// IMPORTAMOS LOS ICONOS PROFESIONALES DESDE AQUÍ:
 import { FaShoppingCart, FaUserCircle, FaBookOpen, FaSignOutAlt, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 
 const Navigation = () => {
