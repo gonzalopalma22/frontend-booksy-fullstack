@@ -72,7 +72,7 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
 }
 
-/* PORTADAS GENERADAS (Placeholder) */
+/* PORTADAS GENERADAS */
 .book-cover-placeholder {
     height: 250px;
     background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 100%);
